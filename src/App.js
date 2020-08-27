@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import IntroCardsContainer from './components/Cards/IntroCardsContainer';
 import EventCardsContainer from './components/Cards/EventCardsContainer';
+import LinkContainer from './components/List/LinkContainer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <IntroCardsContainer />
       <EventCardsContainer />
+      <LinkContainer />
     </div>
   );
 }

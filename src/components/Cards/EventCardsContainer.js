@@ -41,10 +41,10 @@ function EventCardsContainer() {
       <Grid item xs={10} >
         <Grid container justify='space-around' spacing={1}>
           <Grid item xs={6}>
-            <Typography variant='h4' align='left'>
+            <Typography variant='h4' align='left' style={{fontWeight: 600}}>
             ブロードウェイのオンライン体験
             </Typography>
-            <Typography variant='body1' align='left'>
+            <Typography variant='body1' align='left' style={{maxWidth: 450}}>
             ブロードウェイやほかの分野で活躍する人々と交流できる、ライブパフォーマンスや会話に参加しましょう。お家にいながら楽しめます。
             </Typography>
           </Grid>
@@ -57,7 +57,7 @@ function EventCardsContainer() {
             </Button>
           </Grid>
           <Grid item xs={12} style={{paddingBottom: 20}} />
-          <Grid item container xs={9} sm={6}>
+          <Grid item container xs={9} sm={6} md={6}>
             <Grid item xs={12}>
             <EventCards
               imageUrl={cardsDetail[0].imageUrl}
@@ -66,14 +66,14 @@ function EventCardsContainer() {
             />
             </Grid>
           </Grid>
-          <Grid item container xs={3} sm={6} justify='space-around' spacing={2}>
-            <Grid item xs={12} sm={6}>
+          <Grid item container xs={3} sm={6} md={6} justify='space-around' spacing={2}>
+            <Grid item xs={12} sm={12} md={6}>
             <EventCards
               imageUrl={cardsDetail[1].imageUrl}
               title={cardsDetail[1].title}
             />
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={12} md={6}>
             <EventCards
               imageUrl={cardsDetail[2].imageUrl}
               title={cardsDetail[2].title}

@@ -7,9 +7,6 @@ const useStyles = makeStyles({
     paddingTop: '2%',
     paddingBottom: '4%',
     backgroundColor: 'white'
-  },
-  secondArea: {
-    backgroundColor: 'black'
   }
 })
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, Typography, Button, Box, Grid, createMuiTheme, ThemeProvider } from '@material-ui/core'
-import logo from '../../img/pngwave.png'
+import logo from '../../img/airbnb-logo-white.png'
 import image from '../../img/header-img.jpg'
 import HeaderTabs from './HeaderTabs'
 import SelectLanButton from '../Buttons/SelectLanButton'
@@ -26,9 +26,14 @@ const useStyles = makeStyles({
     paddingTop: 200,
     width: 300,
     textAlign: 'left',
+    '& > *' : {
+      marginTop: 12,
+      fontWeight: 'bold'
+    }
   },
   logo: {
-    height: '120%',
+    height: '70%',
+    margin: 'auto 0'
   },
   tooltar: {
     display: 'flex',
@@ -55,22 +60,23 @@ function Header() {
         <Box py={2}
           className={classes.tooltar}
         >
-          <img src={logo} alt='airbnb-logo' className={classes.logo} />
+          <img src={logo}
+            alt='airbnb-logo'
+            className={classes.logo}
+          />
           <HeaderTabs />
           <div >
             <SelectLanButton color='white' />
             <UserMenuButton />
           </div>
         </Box>
-        <Box
-          className={classes.text}
-        >
+        <Box className={classes.text}>
           <ThemeProvider theme={theme}>
-            <Typography variant='h1' gutterBottom>
+            <Typography variant='h1' >
               好奇心くすぐる旅に出かけよう
             </Typography>
           </ThemeProvider>
-          <Typography variant='body2' gutterBottom>
+          <Typography variant='body2'>
             いつもとはひと味ちがう休暇をプランして、旅先の隠れた魅力を見つけに行こう。
           </Typography>
           <Button

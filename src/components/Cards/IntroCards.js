@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
   text: {
     height: 90,
-    paddingTop: 8
+    paddingTop: 8,
   }
 });
 
@@ -35,7 +35,7 @@ function IntroCards({ imageUrl, title, description}) {
           title={title}
         />
         <CardContent className={classes.text}>
-          <Typography variant="h6">
+          <Typography variant="h6" style={{fontWeight: 'bold'}}>
             {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">

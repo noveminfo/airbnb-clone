@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     height: '100%',
     borderRadius: 16,
     textAlign: 'left',
-    backgroundColor: 'gray'
+    backgroundColor: '#222222'
   },
   media: {
     height: (props) => props.big ? 600 : 260,
@@ -20,7 +20,10 @@ const useStyles = makeStyles({
   text: {
     height: 60,
     paddingTop: 5,
-    color: 'white'
+    color: 'white',
+    '& *' : {
+      fontWeight: 'bold'
+    }
   }
 });
 
