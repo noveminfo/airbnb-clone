@@ -9,11 +9,14 @@ import { IconButton, Typography, Box, makeStyles } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 
 const usestyles = makeStyles({
-  button: {
-    '& > *': {
-      margin: 5
-    }
+  button : {
+    display: 'flex',
   },
+  icon: {
+    marginTop: -3,
+    paddingRight: 8
+    
+  }
 })
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -39,14 +42,16 @@ function LangDialog({icon, text}) {
         onClick={handleClickOpen}
         disableRipple={true}
         style={{backgroundColor: 'transparent'}}
-        className={classes.button}
       >
-        <Typography>
-        {icon}
-        </Typography>
+        <Box className={classes.button}>
+          <div className={classes.icon}>
+          {icon}
+          </div>
         <Typography variant='body2' style={{fontWeight: 600, textDecoration: 'underline'}}>
           {text}
         </Typography>
+        </Box>
+          
       </Button>
       <Dialog
         open={open}

@@ -5,6 +5,7 @@ import image from '../../img/header-img.jpg'
 import HeaderTabs from './HeaderTabs'
 import SelectLanButton from '../Buttons/SelectLanButton'
 import UserMenuButton from '../Buttons/UserMenuButton'
+import HostButton from '../Buttons/HostButton'
 
 const theme = createMuiTheme()
 
@@ -66,6 +67,7 @@ function Header() {
           />
           <HeaderTabs />
           <div >
+            <HostButton />
             <SelectLanButton color='white' />
             <UserMenuButton />
           </div>

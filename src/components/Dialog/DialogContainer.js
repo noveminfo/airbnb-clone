@@ -1,6 +1,6 @@
 import React from 'react'
 import LangDialog from './LangDialog'
-import { Box, makeStyles, IconButton, Typography } from '@material-ui/core'
+import { Box, makeStyles, IconButton } from '@material-ui/core'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import InstagramIcon from '@material-ui/icons/Instagram'
@@ -16,8 +16,9 @@ const useStyles = makeStyles({
     height: 24,
     width: 24,
     color: 'black',
-    marginTop: -15,
+    marginTop: -10,
   },
+  
 })
 
 function DialogContainer() {

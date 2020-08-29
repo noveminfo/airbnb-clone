@@ -1,7 +1,6 @@
 import React from 'react'
 import { Grid, Typography, makeStyles, Divider } from '@material-ui/core'
 import LinkList from './LinkList'
-import LangDialog from '../Dialog/LangDialog'
 import DialogContainer from '../Dialog/DialogContainer'
 
 const useStyles = makeStyles({
