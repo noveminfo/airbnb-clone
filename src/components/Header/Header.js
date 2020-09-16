@@ -18,8 +18,8 @@ const useStyles = makeStyles({
     color: 'white',
     // backgroundImage: 'url(https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)',
     backgroundImage: `url(${image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: "center center",
+    backgroundSize: '100%',
+    // backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     height: 650
   },
